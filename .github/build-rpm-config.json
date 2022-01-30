@@ -1,0 +1,10 @@
+{
+    "bmfr": {
+        "rpmSuffix": "suffix-bmfr",
+        "pkBu": "014"
+    },
+    "bmit": {
+        "rpmSuffix": "suffix-bmit",
+        "pkBu": "022"
+    }
+  }
