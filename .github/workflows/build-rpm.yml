@@ -36,4 +36,6 @@ jobs:
           #RPM_SUFFIX: ${{ fromJSON(secrets.BU_CONFIG)[github.event.inputs.businessUnit].rpmSuffix }}
           #PKBU: ${{ fromJSON(secrets.BU_CONFIG)[github.event.inputs.businessUnit].pkBu }}
         run: |
+          RPM_SUFFIX=`jq .${{ github.event.inputs.businessUnit }}.rpmSuffix .github/build-rpm-config.json`
           echo $MVN_BU_NAME
+          echo $RPM_SUFFIX
